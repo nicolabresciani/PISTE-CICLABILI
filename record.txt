@@ -1,0 +1,7 @@
+6	VIA CARLO AMORETTI		    Pista ciclabile					                Sede propria
+4	PIAZZA GIOVANNI AMENDOLA	Sede propria					                Pista ciclabile
+16	VIA ROBERTO ARDIGO'		    No ordinanza					                Corsia ciclabile ricavata dal marciapiede
+30	VIA CRISTINA BELGIOIOSO		Percorso promiscuo pedonale e ciclabile		    No ordinanza
+
+
+

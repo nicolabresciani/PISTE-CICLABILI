@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pisteCiclabiliMilano [
+    <!ELEMENT pisteCiclabiliMilano (pista+)>
+    <!ELEMENT pista (id, nome_via, tipologia, sede)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT nome_via (#PCDATA)>
+    <!ELEMENT tipologia (#PCDATA)>
+    <!ELEMENT sede (#PCDATA)>
+]>
+<pisteCiclabiliMilano>
+   <pista>
+        <id>4</id>
+        <nome_via>PIAZZA GIOVANNI AMENDOLA</nome_via>
+        <tipologia>Pista ciclabile</tipologia>
+        <sede>Sede propria</sede>
+    </pista>
+    <pista>
+        <id>6</id>
+        <nome_via>VIA CARLO AMORETTI</nome_via>
+        <tipologia>Pista ciclabile</tipologia>
+        <sede>Sede propria</sede>
+    </pista>
+    <pista>
+        <id>16</id>
+        <nome_via>VIA ROBERTO ARDIGO'</nome_via>
+        <tipologia>No ordinanza</tipologia>
+        <sede>Corsia ciclabile ricavata dal marciapiede</sede>
+    </pista>
+    <pista>
+        <id>30</id>
+        <nome_via>VIA CRISTINA BELGIOIOSO</nome_via>
+        <tipologia>No ordinanza</tipologia>
+        <sede>Percorso promiscuo pedonale e ciclabile</sede>
+    </pista>
+</pisteCiclabiliMilano>
