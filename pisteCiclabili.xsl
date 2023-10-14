@@ -5,7 +5,7 @@
             <body>
                 <h2>Piste Ciclabili Milano</h2>
                 <table border="1">
-                    <tr bgcolor="#9acd32">
+                    <tr bgcolor="#green">
                         <th>ID</th>
                         <th>Nome Via</th>
                         <th>Tipologia</th>
