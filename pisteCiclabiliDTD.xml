@@ -6,6 +6,7 @@
     <!ELEMENT nome_via (#PCDATA)>   <!-- stessa cosa -->
     <!ELEMENT tipologia (#PCDATA)>  <!-- stessa cosa -->
     <!ELEMENT sede (#PCDATA)>       <!-- stessa cosa -->
+    
 ]>
 <pisteCiclabiliMilano>
    <pista>
@@ -33,3 +34,4 @@
         <sede>Percorso promiscuo pedonale e ciclabile</sede>
     </pista>
 </pisteCiclabiliMilano>
+
