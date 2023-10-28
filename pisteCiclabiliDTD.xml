@@ -1,37 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE pisteCiclabiliMilano [
-    <!ELEMENT pisteCiclabiliMilano (pista+)> <!-- Indica che all'interno di <pisteCiclabiliMilano>, ci deve essere almeno un elemento <pista>.+ indica che può esserci uno o più elementi <pista> -->
-    <!ELEMENT pista (id, nome_via, tipologia, sede)>
-    <!ELEMENT id (#PCDATA)>         <!-- indica dati di testo come "4", "6", "16", "30", e così via -->
-    <!ELEMENT nome_via (#PCDATA)>   <!-- stessa cosa -->
-    <!ELEMENT tipologia (#PCDATA)>  <!-- stessa cosa -->
-    <!ELEMENT sede (#PCDATA)>       <!-- stessa cosa -->
-    
+<!ELEMENT pisteCiclabiliMilano (pista*)>
+<!ELEMENT pista (id, nomeVia, tipologia, sede)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nomeVia (#PCDATA)>
+<!ELEMENT tipologia (#PCDATA)>
+<!ELEMENT sede (nome, classe)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT classe (#PCDATA)>
+<!ATTLIST classe nome CDATA #REQUIRED>
 ]>
+
 <pisteCiclabiliMilano>
-   <pista>
+    <pista>
         <id>4</id>
-        <nome_via>PIAZZA GIOVANNI AMENDOLA</nome_via>
+        <nomeVia>PIAZZA GIOVANNI AMENDOLA</nomeVia>
         <tipologia>Pista ciclabile</tipologia>
-        <sede>Sede propria</sede>
+        <sede>
+            <nome>Sede propria</nome>
+            <classe nome = "nicola"></classe>
+        </sede>
     </pista>
     <pista>
         <id>6</id>
-        <nome_via>VIA CARLO AMORETTI</nome_via>
+        <nomeVia>VIA CARLO AMORETTI</nomeVia>
         <tipologia>Pista ciclabile</tipologia>
-        <sede>Sede propria</sede>
+        <sede>
+            <nome>Sede propria</nome>
+            <classe nome = "nicola"></classe>
+        </sede>
     </pista>
     <pista>
         <id>16</id>
-        <nome_via>VIA ROBERTO ARDIGO'</nome_via>
+        <nomeVia>VIA ROBERTO ARDIGO'</nomeVia>
         <tipologia>No ordinanza</tipologia>
-        <sede>Corsia ciclabile ricavata dal marciapiede</sede>
+        <sede>
+            <nome>Corsia ciclabile ricavata dal marciapiede</nome>
+            <classe nome = "nicola"></classe>
+        </sede>
     </pista>
     <pista>
         <id>30</id>
-        <nome_via>VIA CRISTINA BELGIOIOSO</nome_via>
+        <nomeVia>VIA CRISTINA BELGIOIOSO</nomeVia>
         <tipologia>No ordinanza</tipologia>
-        <sede>Percorso promiscuo pedonale e ciclabile</sede>
+        <sede>
+            <nome>Percorso promiscuo pedonale e ciclabile</nome>
+            <classe nome = "nicola"></classe>
+        </sede>
     </pista>
 </pisteCiclabiliMilano>
-

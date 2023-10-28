@@ -5,18 +5,20 @@
             <body>
                 <h2>Piste Ciclabili Milano</h2>
                 <table border="1">
-                    <tr bgcolor="#green">
+                    <tr bgcolor="green">
                         <th>ID</th>
                         <th>Nome Via</th>
                         <th>Tipologia</th>
                         <th>Sede</th>
+                        <th>Nome</th> 
                     </tr>
-                    <xsl:for-each select="pisteCiclabiliMilano/pista">
+                    <xsl:for-each  select="pisteCiclabiliMilano/pista">
                         <tr>
                             <td><xsl:value-of select="id" /></td>
                             <td><xsl:value-of select="nomeVia" /></td>
                             <td><xsl:value-of select="tipologia" /></td>
-                            <td><xsl:value-of select="sede" /></td>
+                            <td><xsl:value-of select="sede/nome" /></td>
+                            <td><xsl:value-of select="nome" />Nicola</td>
                         </tr>
                     </xsl:for-each>
                 </table>

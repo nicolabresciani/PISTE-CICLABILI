@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="pisteCiclabiliMilano">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="pista" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="id" type="xs:integer"/>
-              <xs:element name="nome_via" type="xs:string"/>
-              <xs:element name="tipologia" type="xs:string"/>
-              <xs:element name="sede" type="xs:string"/>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="pisteCiclabiliMilano">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="pista" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="id" type="xsd:string"/>
+              <xsd:element name="nomeVia" type="xsd:string"/>
+              <xsd:element name="tipologia" type="xsd:string"/>
+              <xsd:element name="sede">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="nome" type="xsd:string"/>
+                    <xsd:element name="classe">
+                      <xsd:complexType>
+                        <xsd:simpleContent>
+                          <xsd:extension base="xsd:string">
+                            <xsd:attribute name="nome" type="xsd:string" use="required"/>
+                          </xsd:extension>
+                        </xsd:simpleContent>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
